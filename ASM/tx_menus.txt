@@ -1,0 +1,362 @@
+;=========================================================
+; Textes des menus de Final Fantasy IV SNES
+; & Pointeurs 24bits
+; Par ManZ
+; modifié: 23:24 18/02/2004
+;=========================================================
+
+
+;=============================================
+;	Table de Pointeurs 24bits:
+;=============================================
+;menu principal 	00
+	.dw !menup
+	.db ^menup
+;Gils			01
+	.dw !gils
+	.db ^gils
+;temps			02
+	.dw !time
+	.db ^time
+;Can't use		03
+	.dw !cantuse
+	.db ^cantuse
+;item			04
+	.dw !item
+	.db ^item
+;Impossible a utiliser	05
+	.dw !notuse
+	.db ^notuse
+;configuration		06
+	.dw !config
+	.db ^config
+;options		07
+	.dw !options
+	.db ^options
+;magie			08
+	.dw !blanc
+	.db ^blanc
+;noir			09
+	.dw !noir
+	.db ^noir
+;Invokation		0A
+	.dw !invok
+	.db ^invok
+;Etat			0B
+	.dw !etat
+	.db ^etat
+;for level up		0C
+	.dw !forlevup
+	.db ^forlevup
+;Stats			0D
+	.dw !stats
+	.db ^stats
+;controles		0E
+	.dw !controles
+	.db ^controles
+;buttons:		0F
+	.dw !button
+	.db ^button
+;Mpneeded:		10
+	.dw !mpneed
+	.db ^mpneed
+;Ninja:			11
+	.dw !ninja
+	.db ^ninja
+;Multiple:		12
+	.dw !mult
+	.db ^mult
+;manette:		13
+	.dw !manette
+	.db ^manette
+;equiper:		14
+	.dw !equip
+	.db ^equip
+
+;=============================================
+;	Menu Principal:
+;=============================================
+menup:
+	.dw $0070
+	.asc "Objets"
+	.db $01, $F0, $00
+	
+	.asc "Sorts"
+	.db $01, $70, $01
+
+	.asc "Equiper"
+	.db $01, $F0, $01
+
+	.asc "Statut"
+	.db $01, $70, $02
+
+	.asc "Placer"
+	.db $01, $F0, $02
+
+	.asc "Changer"
+	.db $01, $70, $03
+
+	.asc "Options"
+	.db $01, $F0, $03
+
+	.asc "Sauver"
+	.db 0
+gils:
+	.dw $05B0
+	.asc "Gils"
+	.db 0
+time:
+	.dw $04F0
+	.asc "Temps"
+	.db 0
+cantuse:
+	.dw $0252
+	.asc " Inutilisable"
+	.db 0
+item:
+	.dw $0044
+	.asc "Objets"
+	.db 0
+notuse:
+	.dw $0052
+	.asc "Impossible à utiliser."
+	.db 0
+
+;=============================================
+;	Options:
+;=============================================
+config:
+	.dw $0144
+	.asc "Mode Combat"
+	.db $01
+
+	.dw $015E
+	.asc "Actif  Pause"
+	.db $01
+
+	.dw $01C4
+	.asc "Vitesse Cbt"
+	.db $01
+
+	.dw $021E
+	.asc "Vite   Lent"
+	.db $01
+
+	.dw $0244
+	.asc "Vitesse Msg"
+	.db $01
+
+	.dw $02C4
+	.asc "Audio"
+	.db $01
+
+	.dw $02DE
+	.asc "Stéréo Mono"
+	.db $01	
+		
+	.dw $0344
+	.asc "Contrôle"
+	.db $01
+
+	.dw $035E
+	.asc "Normal Perso."
+	.db $01
+	
+	.dw $03DE
+	.asc "Seul   Multiple"
+	.db $01
+
+	.dw $0444
+	.asc "Curseur"
+	.db $01
+	
+	.dw $045E
+	.asc "Reset  Mémoire"
+	.db $01
+
+	.dw $04C4
+	.asc "Couleur"
+	.db 0
+options:
+	.dw $0098
+	.asc "Options"
+	.db 0
+controles:
+	.dw $0096
+	.asc "Contrôles"
+	.db 1
+	
+	.dw $0204
+	.asc "Action"
+	.db $01
+
+	.dw $0284
+	.asc "Annuler"
+	.db $01
+	
+	.dw $0304
+	.asc "Menu"
+	.db $01
+	
+	.dw $0384
+	.asc "Left Button"
+	.db $01
+	
+	.dw $0404
+	.asc "Start"
+	.db 1
+	
+	.dw $0484
+	.asc "Fin"
+	.db 0
+button:
+	.dw $0488
+	.asc "Eteins Action Annuler Menu"
+	.db 0
+mult:
+	.dw $0096
+	.asc "Multiple"
+	.db 0
+manette:
+	.dw $021E
+	.asc "Manette"
+	.db 1
+
+	.dw $029E
+	.asc "Manette"
+	.db 1
+
+	.dw $031E
+	.asc "Manette"
+	.db 1
+
+	.dw $039E
+	.asc "Manette"
+	.db 1
+
+	.dw $041E
+	.asc "Manette"
+	.db 0
+
+;=============================================
+;	Sorts:
+;=============================================
+blanc:
+	.dw $00EE
+	.asc "Blancs"
+	.db 0
+noir:
+	.dw $016E
+	.asc "Noirs"
+	.db 0
+Invok:
+	.dw $01EE
+	.asc "Chimeres"
+	.db 0
+ninja:
+	.dw $016E
+	.asc "Ninjas"
+	.db 0
+mpneed:
+	.dw $020A
+	.asc "Coût PM"
+	.db 0
+
+;=============================================
+;	Statut:
+;=============================================
+Etat:
+	.dw $01F0
+	.asc "Statut"
+	.db 0
+forlevup:
+	.dw $0260
+	.asc "Niveau suivant"
+	.db 0
+Stats:
+	.dw $01A0
+	.asc "Expérience"
+	.db $01
+	
+	.dw $0206
+	.asc "PV"
+	.db 1
+
+	.dw $0286
+	.asc "PM"
+	.db 1
+
+	.dw $0344
+	.asc "Talents"
+	.db 1
+	
+	.dw $03C2
+	.asc "Vigueur"
+	.db 1
+
+	.dw $0442
+	.asc "Agilité"
+	.db 1
+
+	.dw $04C2
+	.asc "Vitesse"
+	.db 1
+	
+	.dw $0542
+	.asc "Esprit"
+	.db 1
+
+	.dw $05C2
+	.asc "Volonté"
+	.db 1
+
+;att/def/mag:
+
+	.dw $035A
+	.asc "Attaque"
+	.db 1
+
+	.dw $03DA
+	.asc "Attaque%"
+	.db 1
+
+	.dw $045A
+	.asc "Défense"
+	.db 1
+
+	.dw $04DA
+	.asc "Défense%"
+	.db 1
+
+	.dw $055A
+	.asc "Déf Mag"
+	.db 1
+
+	.dw $05DA
+	.asc "Déf Mag%"
+	.db 0
+
+
+;=============================================
+;	Equiper:
+;=============================================
+Equip:
+	.dw $005C
+	.asc "MainD"
+	.db 1
+
+	.dw $00DC
+	.asc "MainG"
+	.db 1
+
+	.dw $015C
+	.asc "Tête"
+	.db 1
+	
+	.dw $01DC
+	.asc "Corps"
+	.db 1
+	
+	.dw $025C
+	.asc "Bras"
+	.db 0
